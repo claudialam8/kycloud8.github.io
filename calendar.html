@@ -1,37 +1,44 @@
 <!DOCTYPE HTML>
 <!-- calendar website-->
-<html>
+<html lang="en-us">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
     <style>
         table, th, td{
             border:1px solid black;
             border-collapse: collapse;
         }
-        
+
     </style>
+
 </head>
+<body onload="getDate()">
+    
 
     <table style="width: 50%" center-aligned>
         <caption>Calendar </caption>
         <tr>
+            <th>Sunday</th>
             <th>Monday</th>
             <th>Tuesday</th>
             <th>Wednesday</th>
             <th>Thursday</th>
             <th>Friday</th>
             <th>Saturday</th>
-            <th>Sunday</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td id="sunday"></td>
+            <td id="monday"></td>
+            <td id="tuesday"></td>
+            <td id="wednesday"></td>
+            <td id="thursday"></td>
+            <td id="friday"></td>
+            <td id="saturday"></td>
         </tr>
     </table>
-
+    <p id="today"></p>
+    <script src="script.js"></script>
+</body> 
 </html>
